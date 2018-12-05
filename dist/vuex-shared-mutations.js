@@ -47,7 +47,7 @@ exports.default = function (_ref) {
           window.localStorage.setItem(storageKeyEntry, JSON.stringify(mutation));
           window.localStorage.setItem(key, 'notification');
           window.localStorage.removeItem(key);
-          window.localStorage.removeItem(storageKeyEntry);
+          // window.localStorage.removeItem(storageKeyEntry);
         } catch (e) {
           console.error('[vuex-shared-mutations] Unable to use setItem on localStorage');
           console.error(e);
